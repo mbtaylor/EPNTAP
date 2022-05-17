@@ -21,6 +21,7 @@
 \endgroup
 \makeatother
 \fi
+\def\ucdPart#1{\ucd{#1}}
 
 \DeclareUnicodeCharacter{00B0}{$^\circ$}
 \DeclareUnicodeCharacter{00B5}{$\mu$}
@@ -2480,7 +2481,7 @@ UCDs here are empty, and no unit is provided.
 \item\label{atn-2} Spatial resolution parameters have the same unit as spatial
 coordinate parameters. The associated UCDs combine either
 \ucd{pos.resolution} (if linear) or \ucd{pos.angResolution} (if angular)
-with secondary \ucd{stat.min} or \ucd{stat.max}. c1: only body and
+with secondary \ucdPart{stat.min} or \ucdPart{stat.max}. c1: only body and
 celestial are angular; c2: only cartesian is linear; c3:
 only spherical is angular.
 
