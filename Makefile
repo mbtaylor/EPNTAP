@@ -37,3 +37,8 @@ ivoatex/Makefile:
 	@echo "*** ivoatex submodule not found.  Initialising submodules."
 	@echo
 	git submodule update --init
+
+# Requires STILTS.
+test:
+	sh check-ucds.sh
+
